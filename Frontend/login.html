@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadrasto e Login</title>
+    <link rel="stylesheet" href="./style/pc2.css">
+    <link rel="shortcut icon" href="http://localhost:3000/logar/img/Imagem do WhatsApp de 2024-11-05 à(s) 13.08.27_9168dddf.jpg" type="image/x-icon">
+</head>
+<body>
+    <form id="formpo" action="/login-se" method="post">
+        <h1> Login</h1>
+        <div>
+            <input type="text" placeholder="Usuario" id="User" name="User" onkeyup="login()" maxlength="16">
+            <p id="test" name="test" hidden>usuario ou senha não existe</p>
+            <input type="password" placeholder="Senha" id="password" name="password" onkeyup="login()" maxlength="15"> <img src="http://localhost:3000/cadrastar/img/olho.png" id="icon-Senha-login" onclick="mostrar_senha2()">
+            <button id="btn_login" disabled> Logar</button>
+        </div>
+        <a href="http://localhost:3000/cadrastar/" id="ir_cadrastar"> Cadastro</a> 
+    </form>
+</body>
+<script src="./scripts/login.js"></script>
+</html>

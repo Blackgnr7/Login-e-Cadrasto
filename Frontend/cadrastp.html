@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadrasto e Login</title>
+    <link rel="stylesheet" href="./style/Pc.css">
+    <link rel="shortcut icon" href="http://localhost:3000/cadrastar/img/Imagem do WhatsApp de 2024-11-05 à(s) 13.08.27_9168dddf.jpg" type="image/x-icon">
+</head>    
+<body class="tudo">
+    <header class="Meio">   
+        <form class="formPo" action="/Cadrasta-se" method="post"> 
+            <h1 class="Cadrastar-se">Cadrastar</h1>
+            <div>  
+                <input type="text" required="required" name="Usuario" maxlength="16" placeholder="Usuario" id="Usuario" onkeyup="register()">
+                <input type="password" name="Senha" placeholder="Senha" id="Senha" onkeyup="register()" maxlength="15"> <img src="http://localhost:3000/cadrastar/img/olho.png" id="icon-Senha" onclick="mostrar_senha()">  
+                <input type="password" name="ConfirmaçãoSenha" placeholder= "Confirme sua senha" id="ConfirmaçãoSenha" maxlength="15" onkeyup="register()"> <img src="http://localhost:3000/cadrastar/img/olho.png" id="icon-Senha2" onclick="mostrar_senha()"> 
+                <button class="btn3" id="registrar" placeholder=" Registrar" disabled> Cadrastrar </button> 
+            </div>
+            <a href="http://localhost:3000/logar/" id="mudar_local_login" onclick="mudar_de()"> login</a>
+        </form> 
+    </header>
+</body>
+<script src="./scripts/cadrasto.js"> </script>
+</html>
