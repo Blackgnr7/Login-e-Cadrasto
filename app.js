@@ -65,10 +65,10 @@ app.listen(3000, function(){
     console.log('Sevirdor rodando no url = localhost:3000')
 })
 const connection = mysql.createConnection({
-    host: '127.0.0.1',
+    host: '"host"',
     user: 'root',
-    password: 'Gnr64puto1!',
-    database: 'cadrasto',
+    password: '"senha"',
+    database: '"tabela"',
 })
 
 connection.connect (function (error){
